@@ -1,0 +1,31 @@
+name: crystal_event
+version: 0.1.0
+
+authors:
+  - olympspartan <olympspartan@gmail.com>
+
+targets:
+  crystal_event:
+    main: src/crystal_event.cr
+
+crystal: 1.2.2
+
+dependencies:
+  lucky:
+    github: luckyframework/lucky
+    version: ~> 0.29.0
+  authentic:
+    github: luckyframework/authentic
+    version: ~> 0.8.1
+  carbon:
+    github: luckyframework/carbon
+    version: ~> 0.2.0
+  carbon_sendgrid_adapter:
+    github: luckyframework/carbon_sendgrid_adapter
+    version: ~> 0.2.0
+  lucky_env:
+    github: luckyframework/lucky_env
+    version: ~> 0.1.4
+  lucky_task:
+    github: luckyframework/lucky_task
+    version: ~> 0.1.1
