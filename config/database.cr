@@ -11,7 +11,8 @@ AppDatabase.configure do |settings|
       # Some common usernames are "postgres", "root", or your system username (run 'whoami')
       username: ENV["DB_USERNAME"]? || "postgres",
       # Some Postgres installations require no password. Use "" if that is the case.
-      password: ENV["DB_PASSWORD"]? || "admin"
+      password: ENV["DB_PASSWORD"]? || "admin",
+      query: "initial_pool_size=5&retry_attempts=2"
     )
   end
 end
